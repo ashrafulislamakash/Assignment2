@@ -40,12 +40,19 @@
 
 .btn-white {
   color: var(--orange);
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 5px;
   padding: 20px 36px;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
+}
+.btn-white:hover {
+  color: var(--white);
+  background-color: transparent;
+  padding: 18px 34px;
+  border: 2px solid var(--white);
+  cursor: pointer;
 }
 
 /* Style Start */
@@ -96,9 +103,8 @@ nav .navitems:hover {
 }
 
 .content-container {
-  max-width: 870px;
   text-align: center;
-  align-self: center;
+  padding: 0 20%;
   margin-bottom: 50px;
 }
 
@@ -310,6 +316,7 @@ h1 .first2 {
   line-height: 26px;
   text-align: center;
   margin: 24px 0 50px 0;
+  padding: 0 32%;
 }
 .logo-container {
   display: flex;
@@ -329,34 +336,44 @@ h1 .first2 {
 .cta-contaienr {
   background-color: var(--orange);
   display: flex;
+  gap: 120px;
   border-radius: 8px;
   padding: 60px;
   object-fit: cover;
 }
 
-.cta .body {
+.cta-body {
   align-self: center;
-  object-fit: cover;
 }
 
 .cta-title {
   text-align: left;
-  width: 80%;
+  width: 60%;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 24px;
+}
+
+.cta-body p {
+  width: 60%;
+  margin: 24px 0;
+  color: var(--white);
 }
 
 /* footer Start */
 
 footer {
-  margin: 0 10% 240px 10%;
+  margin: 0 10% 120px 10%;
 }
 .footer-contaienr {
   display: flex;
   justify-content: center;
   background-color: var(--lightorange);
   padding: 40px 10%;
+}
+
+.ctaimg {
+  height: 500px;
 }
