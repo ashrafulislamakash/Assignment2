@@ -485,6 +485,35 @@ h1 .first2 {
     justify-content: space-between;
     padding: 40px 30px;
   }
+  .logo-container {
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-contaienr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .cta-contaienr {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+  }
+
+  .ctaimg {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .feature-love-enjoy-container {
+    display: flex;
+    gap: 60px;
+    margin: 100px 0;
+  }
 }
 
 /* Small devices landscape phones, less than 768px */
@@ -579,5 +608,49 @@ h1 .first2 {
   .logo-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 24px;
+  }
+
+  .footer-content {
+    background-color: var(--lightorange);
+    margin: 40px 0;
+    padding: 40px 0;
+  }
+
+  .architectimg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .experience {
+    padding: 24px;
+  }
+
+  .experience h1 {
+    font-size: 40px;
+  }
+
+  .feature-love-enjoy-container {
+    display: flex;
+    gap: 60px;
+    margin: 60px 0;
+  }
+
+  .cta-contaienr {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .ctaimg {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .cta-title {
+    width: 100%;
+  }
+
+  .cta-body p {
+    width: 100%;
   }
 }
