@@ -581,6 +581,8 @@ h1 .first2 {
 
   .nav-title {
     text-align: center;
+    font-size: 32px;
+    line-height: 53px;
   }
 
   .title {
