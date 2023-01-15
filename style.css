@@ -287,6 +287,7 @@ h1 .first2 {
 }
 
 .card {
+  text-align: center;
   border: 1px solid var(--orange);
   border-radius: 8px;
   padding: 40px 60px;
