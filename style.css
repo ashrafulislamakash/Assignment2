@@ -47,6 +47,7 @@
   font-size: 20px;
   line-height: 23px;
 }
+
 .btn-white:hover {
   color: var(--white);
   background-color: transparent;
@@ -55,12 +56,15 @@
   cursor: pointer;
 }
 
+/* Global Container */
+
 .container {
   width: 100%;
   padding: 24px;
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .header {
   background-color: var(--lightorange);
 }
@@ -88,6 +92,7 @@ nav ul {
   gap: 70px;
   align-items: center;
 }
+
 nav li {
   list-style: none;
 }
@@ -162,6 +167,7 @@ nav .navitems:hover {
   line-height: 53px;
   color: var(--dark3);
 }
+
 h1 .first {
   color: var(--dark1);
   font-weight: 700;
@@ -191,6 +197,7 @@ h1 .first2 {
   gap: 146px;
   margin: 130px 0;
 }
+
 .features-love-enjoy-title {
   color: var(--dark1);
   font-weight: 700;
@@ -205,6 +212,7 @@ h1 .first2 {
   flex-direction: column;
   gap: 20px;
 }
+
 .option {
   padding: 30px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -247,6 +255,7 @@ h1 .first2 {
   font-size: 65px;
   line-height: 70px;
 }
+
 .experience p {
   color: var(--white);
   text-align: center;
@@ -263,6 +272,7 @@ h1 .first2 {
   font-size: 45px;
   line-height: 53px;
 }
+
 .somefacts p {
   color: var(--dark3);
   font-weight: 400;
@@ -301,11 +311,13 @@ h1 .first2 {
   font-size: 20px;
   line-height: 23px;
 }
+
 /* sponspors  Start */
 
 .sponspors {
   padding: 130px 0;
 }
+
 .sponspors-tile {
   color: var(--dark1);
   font-weight: 700;
@@ -313,6 +325,7 @@ h1 .first2 {
   line-height: 53px;
   text-align: center;
 }
+
 .sponspors p {
   color: var(--dark3);
   font-weight: 400;
@@ -323,6 +336,7 @@ h1 .first2 {
   max-width: 542px;
   margin: 0 auto;
 }
+
 .logo-container {
   display: flex;
   justify-content: space-between;
@@ -380,8 +394,7 @@ h1 .first2 {
   text-align: center;
 }
 
-/* Responcive
- */
+/* Media Query */
 
 /* X-Large devices large desktops, less than 1400px */
 @media (max-width: 1399.98px) {
@@ -456,6 +469,9 @@ h1 .first2 {
     margin: 0 auto;
   }
 
+  nav ul {
+    gap: 30px;
+  }
   .featurecontainer {
     display: flex;
     padding: 60px;
@@ -528,7 +544,10 @@ h1 .first2 {
     margin: 30px 0;
   }
   nav ul {
-    gap: 30px;
+    gap: 20px;
+  }
+  .nav-title {
+    font-size: 35px;
   }
 
   .logo-container {
