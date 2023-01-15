@@ -57,6 +57,7 @@
 
 .container {
   width: 100%;
+  padding: 24px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -66,6 +67,7 @@
 
 nav {
   display: flex;
+  padding: 50px 0;
   justify-content: space-between;
 }
 
@@ -132,7 +134,6 @@ nav .navitems:hover {
 
 .bannerimg {
   width: 100%;
-  height: 700px;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -381,27 +382,31 @@ h1 .first2 {
 
 /* Responcive
  */
-/* 
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  ...;
-} */
 
-/* Small devices landscape phones, less than 768px */
-@media (max-width: 767.98px) {
-  .container {
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-}
-
-/* Medium devices tablets, less than 992px */
-@media (max-width: 991.98px) {
+/* X-Large devices large desktops, less than 1400px */
+@media (max-width: 1399.98px) {
   .container {
     width: 100%;
     padding: 24px;
     margin: 0 auto;
+  }
+
+  .feature-love-enjoy-container {
+    display: flex;
+    gap: 60px;
+    margin: 130px 0;
+  }
+
+  .card {
+    padding: 40px 40px;
+  }
+  .architectimg {
+    width: 600px;
+  }
+
+  .experience {
+    margin-left: -40px;
+    bottom: 100px;
   }
 }
 
@@ -412,13 +417,167 @@ h1 .first2 {
     padding: 24px;
     margin: 0 auto;
   }
+
+  .feature-love-enjoy-container {
+    display: flex;
+    gap: 60px;
+    margin: 130px 0;
+  }
+
+  .architectimg {
+    width: 600px;
+  }
+
+  .experience {
+    margin-left: -40px;
+    bottom: 118px;
+  }
+
+  .cta-title {
+    width: 80%;
+  }
+
+  .cta-body p {
+    width: 80%;
+  }
+
+  .footer-content {
+    background-color: var(--lightorange);
+    margin: 60px 0;
+    padding: 40px 0;
+  }
 }
 
-/* X-Large devices large desktops, less than 1400px */
-@media (max-width: 1399.98px) {
+/* Medium devices tablets, less than 992px */
+@media (max-width: 991.98px) {
   .container {
     width: 100%;
     padding: 24px;
     margin: 0 auto;
+  }
+
+  .featurecontainer {
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+  }
+  .featureimg {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .feature-love-enjoy-container {
+    flex-direction: column;
+  }
+
+  .experience {
+    margin-left: -20px;
+    bottom: -36px;
+  }
+
+  .architectimg {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  .card {
+    justify-content: space-between;
+    padding: 40px 30px;
+  }
+}
+
+/* Small devices landscape phones, less than 768px */
+@media (max-width: 767.98px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .sponspors {
+    margin: 30px 0;
+  }
+  nav ul {
+    gap: 30px;
+  }
+
+  .logo-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
+  }
+
+  .cta-contaienr {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+  }
+
+  .ctaimg {
+    height: 500px;
+    object-fit: cover;
+  }
+  .card-contaienr {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+
+/* X-Small devices portrait phones, less than 576px */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  nav {
+    display: block;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: block;
+    gap: 70px;
+    text-align: center;
+  }
+
+  .banner {
+    background-color: var(--lightorange);
+    padding: 0 0;
+  }
+
+  .nav-title {
+    text-align: center;
+  }
+
+  .title {
+    color: var(--dark1);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .featurecontainer {
+    padding: 20px;
+  }
+
+  .imggroup {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+
+  .featureimg {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .logo-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
   }
 }
